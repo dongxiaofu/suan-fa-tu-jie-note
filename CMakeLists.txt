@@ -5,3 +5,11 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(binary_search
         binary_search.c)
+
+add_executable(selection_sort
+        selection_sort.c)
+
+add_executable(math_demo
+        basic/math_demo.c)
+
+
