@@ -15,6 +15,11 @@ add_executable(sum_recursion
 add_executable(quick_sort
         divide_and_conquer/quick_sort.c)
 
+add_executable(dqueue_test
+        graph/dqueue/test.c
+        graph/dqueue/dqueue.h
+        graph/dqueue/dqueue.c)
+
 add_executable(math_demo
         basic/math_demo.c)
 
