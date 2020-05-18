@@ -12,6 +12,9 @@ add_executable(selection_sort
 add_executable(sum_recursion
         divide_and_conquer/sum_recursion.c)
 
+add_executable(quick_sort
+        divide_and_conquer/quick_sort.c)
+
 add_executable(math_demo
         basic/math_demo.c)
 
