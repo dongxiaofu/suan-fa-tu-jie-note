@@ -1,13 +1,22 @@
 #include <stdlib.h>
+#include <string.h>
 
-typedef struct queue {
-    struct queue *head;
-    struct queue *next;
-    void *value;
-} dqueue;
+#define OK 1
+#define ERROR 0
 
-dqueue *init_queue(int size);
+typedef char *ElementType;
 
-void push(dqueue *head, void *item);
+typedef char STATUS;
 
-void *pop(dqueue *queue);
+typedef struct Node {
+    char *data;
+    struct Node *next;
+} Node, *QueuePtr;
+
+typedef struct {
+    QueuePtr front, rear;
+} LinkQueue;
+
+STATUS enter_queue(LinkQueue *queue, char *e);
+
+char *de_queue(LinkQueue *queue);
