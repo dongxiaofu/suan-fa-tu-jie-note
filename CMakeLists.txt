@@ -23,4 +23,7 @@ add_executable(dqueue_test
 add_executable(math_demo
         basic/math_demo.c)
 
+add_executable(bubble_sort
+        sort/bubble_sort.c)
+
 
